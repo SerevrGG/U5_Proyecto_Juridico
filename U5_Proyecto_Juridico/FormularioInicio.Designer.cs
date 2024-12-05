@@ -61,6 +61,8 @@
             this.ClientSize = new System.Drawing.Size(526, 393);
             this.Controls.Add(this.ClientesButton);
             this.Controls.Add(this.Titulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "FormularioInicio";
             this.Text = "FormularioInicio";
             this.ResumeLayout(false);

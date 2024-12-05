@@ -53,18 +53,22 @@ namespace U5_Proyecto_Juridico
         {
             try
             {
-                cliente.clave_cliente = int.Parse(tbx_Clave.Text.Replace("-", ""));
+                cliente.idcliente = int.Parse(tbx_idCliente.Text.Replace("-", ""));
                 cliente.nombre = tbx_Nombre.Text;
-                cliente.direccion = tbx_Direccion.Text;
+                cliente.apellido = tbx_Apellido.Text;
+                cliente.email = tbx_Email.Text;
                 cliente.telefono = tbx_Telefono.Text;
+                cliente.tipocaso = tbx_tipoCaso.Text;
 
 
                 cliente.agregarcliente(cliente);
-                //MessageBox.Show("Cliente agregado exitosamente", "Mi Super", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                tbx_Clave.Clear();
+
+                tbx_idCliente.Clear();
                 tbx_Nombre.Clear();
-                tbx_Direccion.Clear();
+                tbx_Apellido.Clear();
+                tbx_Email.Clear();
                 tbx_Telefono.Clear();
+                tbx_tipoCaso.Clear();
                 MostrarCliente();
             }
             catch (Exception ex)
@@ -77,16 +81,21 @@ namespace U5_Proyecto_Juridico
         {
             try
             {
-                cliente.clave_cliente = int.Parse(tbx_Clave.Text.Replace("-", ""));
+                cliente.idcliente = int.Parse(tbx_idCliente.Text.Replace("-", ""));
                 cliente.nombre = tbx_Nombre.Text;
-                cliente.direccion = tbx_Direccion.Text;
+                cliente.apellido = tbx_Apellido.Text;
+                cliente.email = tbx_Email.Text;
                 cliente.telefono = tbx_Telefono.Text;
+                cliente.tipocaso = tbx_tipoCaso.Text;
 
                 cliente.ActualizarCliente(cliente);
-                tbx_Clave.Clear();
+
+                tbx_idCliente.Clear();
                 tbx_Nombre.Clear();
-                tbx_Direccion.Clear();
+                tbx_Apellido.Clear();
+                tbx_Email.Clear();
                 tbx_Telefono.Clear();
+                tbx_tipoCaso.Clear();
                 MostrarCliente();
             }
             catch (Exception ex)
@@ -99,16 +108,21 @@ namespace U5_Proyecto_Juridico
         {
             try
             {
-                cliente.clave_cliente = int.Parse(tbx_Clave.Text.Replace("-", ""));
+                cliente.idcliente = int.Parse(tbx_idCliente.Text.Replace("-", ""));
                 cliente.nombre = tbx_Nombre.Text;
-                cliente.direccion = tbx_Direccion.Text;
+                cliente.apellido = tbx_Apellido.Text;
+                cliente.email = tbx_Email.Text;
                 cliente.telefono = tbx_Telefono.Text;
+                cliente.tipocaso = tbx_tipoCaso.Text;
 
                 cliente.EliminarCliente(cliente);
-                tbx_Clave.Clear();
+
+                tbx_idCliente.Clear();
                 tbx_Nombre.Clear();
-                tbx_Direccion.Clear();
+                tbx_Apellido.Clear();
+                tbx_Email.Clear();
                 tbx_Telefono.Clear();
+                tbx_tipoCaso.Clear();
                 MostrarCliente();
             }
             catch (Exception ex)
