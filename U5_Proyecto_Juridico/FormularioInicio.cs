@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace U5_Proyecto_Juridico
 {
-    public partial class Form1 : Form
+    public partial class FormularioInicio : Form
     {
-        public Form1()
+        public FormularioInicio()
         {
             InitializeComponent();
+        }
+
+        private void ClientesButton_Click(object sender, EventArgs e)
+        {
+            Form clientes = new ClientesForm();
+            clientes.Show();
         }
     }
 }
